@@ -38,3 +38,73 @@ function generatePassword() {
   // Ask four user Input
   longword = prompt("How many characters would you like your password? Choose between 8 and 128");
   console.log("Password length " + longword);
+if(!longword) {
+    alert("Required value");
+
+  } else if (longword < 8 || longword > 100) {
+    longword = prompt("You must choose between 8 and 100");
+    console.log("Password length " + longword);
+  
+  } else { 
+
+    smolletter = confirm("big letters?");
+    console.log("Upper case " + smolletter);
+    bigletter = confirm("Lower case?");
+    console.log("Lower case " + bigletter);
+    funnies = confirm("special characters?");
+    console.log("Special Character " + funnies);
+    numberbeep = confirm("numbers?");
+    console.log("Number " + numberbeep);
+   
+  };
+
+  //this next section made me cry
+  if (!bigletter && !smolletter && !numberbeep && !funnies) {
+    userdumb = alert("You must choose a criteria");
+  // 4 true options
+  } else if (bigletter && smolletter && numberbeep && funnies) {
+    userdumb = lowerCase.concat(upperCase, numbers, special);
+    console.log(userdumb);
+  }
+ 
+  else if (bigletter && smolletter && funnies) {
+    userdumb = lowerCase.concat(upperCase, special);
+    console.log(userdumb);
+  }
+  else if (bigletter && smolletter && numberbeep) {
+    userdumb = lowerCase.concat(upperCase, numbers);
+    console.log(userdumb);
+  }
+  else if (smolletter && numberbeep && funnies) {
+    userdumb = upperCase.concat(numbers, special);
+    console.log(userdumb);
+  }
+  else if (bigletter && numberbeep && funnies) {
+    userdumb = lowerCase.concat(numbers, special);
+    console.log(userdumb);
+  }
+  
+  else if (bigletter && smolletter) {
+    userdumb = lowerCase.concat(upperCase);
+    console.log(userdumb);
+  }
+  else if (bigletter && numberbeep) {
+    userdumb = lowerCase.concat(numbers);
+    console.log(userdumb);
+  }
+  else if (bigletter && funnies) {
+    userdumb = lowerCase.concat(special);
+    console.log(userdumb);
+  }
+  else if (smolletter && numberbeep) {
+    userdumb = upperCase.concat(numbers);
+    console.log(userdumb);
+  }
+  else if (smolletter && funnies) {
+    userdumb = upperCase.concat(special);
+    console.log(userdumb);
+  }
+  else if (numberbeep && funnies) {
+    userdumb = numbers.concat(special);
+    console.log(userdumb);
+  }
