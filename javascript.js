@@ -61,7 +61,7 @@ if(!longword) {
   //this next section made me cry
   if (!bigletter && !smolletter && !numberbeep && !funnies) {
     userdumb = alert("You must choose a criteria");
-  // 4 true options
+ 
   } else if (bigletter && smolletter && numberbeep && funnies) {
     userdumb = lowerCase.concat(upperCase, numbers, special);
     console.log(userdumb);
