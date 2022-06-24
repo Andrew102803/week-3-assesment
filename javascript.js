@@ -108,3 +108,20 @@ if(!longword) {
     userdumb = numbers.concat(special);
     console.log(userdumb);
   }
+ //i am in physical pain from this aghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+  else if (smolletter) {
+    userdumb = blankUpper.concat(upperCase);
+    console.log(userdumb);
+  }
+  else if (bigletter) {
+    userdumb = lowerCase;
+    console.log(userdumb);
+  }
+  else if (funnies) {
+    userdumb = special;
+    console.log(userdumb);
+  }
+  else if (numberbeep) {
+    userdumb = numbers;
+    console.log(userdumb);
+  };
