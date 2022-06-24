@@ -125,3 +125,20 @@ if(!longword) {
     userdumb = numbers;
     console.log(userdumb);
   };
+// last bit of code thank god
+  var passwordBlank = [];
+  
+  // random stuff
+  for (var i = 0; i < longword; i++) {
+    var allChoices = userdumb[Math.floor(Math.random() * userdumb.length)];
+    passwordBlank.push(allChoices);
+    console.log(allChoices);
+  }
+
+
+  var password = passwordBlank.join("");
+  console.log("Your Pasword is: " + password);
+  return password;
+  //puts the password in box
+}
+//According to all known laws of aviation a bee should not be able to fly
